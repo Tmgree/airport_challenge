@@ -1,5 +1,8 @@
 require 'airport'
 
-describe airport do
-
+describe Airport do
+  it 'allows a plane to land' do
+  
+      expect(subject).to respond_to :land
+    end
 end

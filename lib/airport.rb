@@ -1,3 +1,6 @@
-class airport
+class Airport
+  def land
+
+  end
 
 end

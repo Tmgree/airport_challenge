@@ -29,4 +29,13 @@ end
   expect(subject.release_plane).to eq plane
 
   end
+
+  it "if no capacity is put in ---> default capacity" do
+
+  airport=Airport.new
+  Airport::DEFAULT_CAPACITY.times {airport.land Plane.new}
+  expect {airport.land Plane.new}.to raise_error 'Airport is full'
+
+  end
+
 end
